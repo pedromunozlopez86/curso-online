@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Mi estilo desde sass-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/ab7b1882a8.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Cursos Online CCC - Curso 1</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="container-fluid bg-info shadow-lg position-fixed" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark container" id="barra">
+            <a class="navbar-brand" href="index.html">
+                <div class="container-fluid">
+                    <img src="assets/images/logo_.png" alt="">
+                    <h3>Herramientas Digitales para la Educación</h3>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="index.html#hero">Inicio</a>
+                    <a class="nav-link active" href="#home">Cursos</a>
+                    <a class="nav-link active" href="cursos.html#footer">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <main class="container" id="main-curso-user">
+        <div class="formulario">
+            <h2>Formulario de registro Plataformas Audiovisuales</h2>
+            <form action="" class="pl-5" id="formulario">
+                <h5>Nombre</h5>
+                <input type="text" name="nombre" id="nombre-user">
+                <br>
+                <h5>Apellidos</h5>
+                <input type="text" name="apellidos" id="apellidos-user">
+                <br>
+                <h5>Correo</h5>
+                <input type="email" name="correo" id="correo-user">
+                <br>
+                <h5>Contraseña</h5>
+                <input type="password" name="clave" id="password-user">
+                <br>
+                <h5>Institución</h5>
+                <input type="text" name="colegio" id="colegio-user">
+                <br>
+                <button type="submit" class="btn" id="btn-registrar-user">Registrate</button>
+                <button class="shadow btn btn-info" id="btn-ingresar-google">Tengo una cuenta Google</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container-fluid mt-5" id="footer-id-login">
+        <section class="container">
+            <p class="copy">2021 Todos los derechos reservados. Plataformas Audiovisuales</p>
+            <div class="icon-container">
+                <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+                <a href=""><i class="fas fa-phone-square fa-2x"></i></a>
+            </div>
+
+        </section>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Firebase script-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyADc0TZlRgAiX0f--6wLhMLpeh8KugwMFk",
+            authDomain: "curso-ccc-1.firebaseapp.com",
+            databaseURL: "https://curso-ccc-1-default-rtdb.firebaseio.com",
+            projectId: "curso-ccc-1",
+            storageBucket: "curso-ccc-1.appspot.com",
+            messagingSenderId: "912929060318",
+            appId: "1:912929060318:web:c56e4739b8ef69d73e194f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth()
+        const fs = firebase.firestore();
+    </script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

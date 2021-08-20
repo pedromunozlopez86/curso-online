@@ -1,0 +1,30 @@
+header {
+    background-image: url("../images/hero-section2.jpg");
+    background-position:  top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    & div {
+        display: flex !important;
+        height: 100%;
+        justify-content: end !important;
+        align-items: flex-end !important;
+    }
+
+}
+
+button {
+    background-color: $calipso-ccc !important;
+    color: white !important;
+    padding: .5rem 3rem!important;
+    margin: 3rem 1rem !important;
+
+    &:hover{
+        color: $ambar-ccc !important;
+    }
+
+}
+
+#login-cursos{
+    display: none;
+}

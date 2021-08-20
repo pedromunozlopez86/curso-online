@@ -1,0 +1,46 @@
+#about {
+    padding: 1rem;
+    color: grey;
+    text-align: center !important;
+    & h2 {
+        margin: 2rem 0rem;
+        text-align: center;
+    }
+    & p {
+        margin: 2rem;
+    }
+}
+
+div.card-body {
+    margin-bottom: auto !important;
+ & p {
+     padding: 0 !important;
+
+ }
+}
+div.card {
+   // display: flex;
+    align-items: center;
+
+    & img {
+        width: 100%;
+    }
+}
+img.card-img-top {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+img.card-img-top.obs {
+    padding: 3rem .2rem 2rem .2rem !important;
+}
+
+img.card-img-top.classroom {
+    padding: .5rem .2rem .7rem .2rem !important;
+}
+
+img.card-img-top.google {
+    padding: .5rem .2rem 1rem .2rem !important;
+}

@@ -1,0 +1,48 @@
+#video {
+    margin: 0rem;
+    & iframe {
+        padding-top: 100px;
+        text-align: center;
+    }
+}
+
+.container #btn-ingresa-video {
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+section#login-section.container {
+  text-align: left;
+  padding-top: 1rem;
+  margin-bottom: 10vh;
+
+  & input {
+      border: $calipso-ccc 2px solid;
+      border-radius: 5%;
+  };
+  & span {
+    padding-right: 5px;
+  }
+}
+
+#main-curso-user {
+    padding-top: 7rem;
+    
+    & h2 {
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    & .formulario {
+        border: solid 2px $calipso-ccc;
+        padding: 3rem;
+        & h5 {
+       padding: 0.2rem 1rem;
+        }
+    }
+}
+

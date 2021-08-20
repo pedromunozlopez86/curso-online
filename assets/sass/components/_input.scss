@@ -1,0 +1,10 @@
+input {
+    text-align: left;
+    border: solid 1px $ambar-ccc;
+    box-shadow: 1px orange;
+    padding-right: 10rem;
+    color: black;
+    &:focus {
+        border: solid 1px $calipso-ccc;
+    }
+}

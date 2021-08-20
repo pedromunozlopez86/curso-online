@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Mi estilo desde sass-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/ab7b1882a8.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Cursos Online CCC - Catálogo de Cursos</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-info shadow-lg position-fixed" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark container" id="barra">
+            <a class="navbar-brand" href="index.html">
+                <div class="container-fluid">
+                    <img src="assets/images/logo_.png" alt="">
+                    <h3>Herramientas Digitales para la Educación</h3>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="index.html#hero">Inicio</a>
+                    <a class="nav-link active" href="#home">Cursos</a>
+                    <a class="nav-link active" href="" data-toggle="modal" data-target="#modal-form">Contacto</a>
+                    <p class="nav-link" id="mail-user"></p>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Formulario de Contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div> -->
+                <div class="modal-body">
+                    <div class="typeform-widget"
+                        data-url="https://form.typeform.com/to/lb6F8GFL?typeform-medium=embed-snippet"
+                        data-transparency="68" data-hide-headers="true" data-hide-footer="true"
+                        style="width: 100%; height: 500px;"></div>
+                    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+                </div>
+                <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+
+    <main class="container pt-5">
+        <h1 class=" text-center font-weight-bold text-primary mt-5 pt-5">Programa de Capacitación</h1>
+    </main>
+
+    <div class="container">
+        <div class="pt-5 ">
+
+            <!-- Modal Video-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Bienvenida</h5>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <video src="https://plataformasaudiovisuales.cl/videos/vbienvenida.mp4" width="640"
+                                height="360" controls controlsList="nodownload" id="video"></video>
+                            <button type="button" class="btn btn-secondary m-1" data-dismiss="modal"
+                                onclick="pausa()">Cerrar</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Formulario de Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                        <div class="modal-body">
+                            <div class="typeform-widget"
+                                data-url="https://form.typeform.com/to/lb6F8GFL?typeform-medium=embed-snippet"
+                                data-transparency="68" data-hide-headers="true" data-hide-footer="true"
+                                style="width: 100%; height: 500px;"></div>
+                            <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+                        </div>
+                        <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container col-12">
+                <table class="table table-responsive table-sm table-hover table-bordered text-center">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Semana</th>
+                            <th scope="col">Tema</th>
+                            <th scope="col" class="pr-5">Descripción de Unidad</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <th scope="row">0</th>
+                            <td class="align-items-center"><a class="text-left" href="" data-toggle="modal"
+                                    data-target="#exampleModal" onclick="reproducir()">
+                                    Introducción y
+                                    Bienvenida</a>
+                            </td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Primera Reunión de bienvenida e introducción general,
+                                    sincronica.
+                                    Liberación de la
+                                    unidad correspondiente a la semana 1</li>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><a href="semana-1.html">Tecnología en el aula</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Introducción y beneficios del aula digital.</li>
+                                <li class="px-0 mx-0 px-md-5">Conoce las herramientas de Google</li>
+                                <li class="px-0 mx-0 px-md-5">Ciudadanos digitales para profesores.</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><a href="semana-2.html">Google para la educación</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">No más libros de textos.</li>
+                                <li class="px-0 mx-0 px-md-5">Creando un entorno personal de enseñanza-aprendizaje.</li>
+                                <li class="px-0 mx-0 px-md-5">Conoce la red de apoyo de Google y otros colaboradores.
+                                </li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><a href="semana-3.html">Drive y Formularios</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Trabaja en línea</li>
+                                <li class="px-0 mx-0 px-md-5">Trabaja colaborativamente</li>
+                                <li class="px-0 mx-0 px-md-5">Digitaliza tu material</li>
+                                <li class="px-0 mx-0 px-md-5">Digitaliza tus evaluaciones</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td><a href="semana-4.html">Gmail y Google Sites</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Gestión de tu correo electrónico.</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Uso de chat.</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Uso de grupos.</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Crea tu Google Site</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td><a href="semana-5.html">Calendar</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Agendar Eventos</li>
+                                <li class="px-0 mx-0 px-md-5">Agendar Reunión</li>
+                                <li class="px-0 mx-0 px-md-5">Compartir reuniones</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td><a href="semana-6.html">Meet</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Configuración de video</li>
+                                <li class="px-0 mx-0 px-md-5">Configuración de audio</li>
+                                <li class="px-0 mx-0 px-md-5">Configuración de pantalla</li>
+                                <li class="px-0 mx-0 px-md-5">Compartir Ventanas, Pantalla, Pestañas</li>
+                                <li class="px-0 mx-0 px-md-5">Compartir Pizarra</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">7</th>
+                            <td><a href="semana-7.html">Classroom</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Configuración</li>
+                                <li class="px-0 mx-0 px-md-5">Creación de Cursos, Tareas, Uso Tablón</li>
+                                <li class="px-0 mx-0 px-md-5">Creación de Rúbricas</li>
+                                <li class="px-0 mx-0 px-md-5">Interacción con herramientas de google</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">8</th>
+                            <td><a href="semana-8.html">Hojas de cálculo</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Creación de Hojas de Cálculo</li>
+                                <li class="px-0 mx-0 px-md-5">Tipos de documentos, filas y columnas</li>
+                                <li class="px-0 mx-0 px-md-5">Fórmulas y cálculos básicos</li>
+                                <li class="px-0 mx-0 px-md-5">buscador de funciones</li>
+                                <li class="px-0 mx-0 px-md-5">análisis de datos</li>
+                                <li class="px-0 mx-0 px-md-5">gráficos y orden de datos</li>
+                                <li class="px-0 mx-0 px-md-5">tablas dinámicas</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">9</th>
+                            <td><a href="semana-9.html">Búsqueda en Google</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Cómo hacer más efectiva la
+                                    búsqueda en Google
+                                </li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Buscador integrado en las
+                                    diferentes
+                                    herramientas de
+                                    google</li>
+                            </td>
+                        </tr>
+
+                        <tr class="table-info">
+                            <th scope="row">10</th>
+                            <td><a class="text-white font-weight-bold" href="semana-10.html">Presentaciones</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Creación y tipos de presentación
+                                </li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Archivos, editar, insertar</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Formato, diapositivas</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Plantillas</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-px-0 mx-0 px-md-5">Estructura y herramientas</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">11</th>
+                            <td><a href="#">YouTube</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Cómo hacer más efectiva la búsqueda en
+                                    youtube</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Youtube como herramienta educacional</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Integración de Youtube en classroom</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">12</th>
+                            <td><a href="#">Documentos</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Creación y tipos de documentos</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Procesador de texto: tipo de letra, párrafo,
+                                    interlineado,
+                                    etc</li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Insertar elementos: imágenes, tablas,
+                                    gráficos, vínculos.
+                                </li>
+                                <li class="px-0 mx-0 px-px-0 mx-0 px-md-5">Elementos colaborativos: compartir, comentar,
+                                    editar,
+                                    sugerir, etc.
+                                </li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">13</th>
+                            <td><a href="#">Ciudadanía digital</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Cómo desarrollar relaciones sanas con la tecnología.</li>
+                                <li class="px-0 mx-0 px-md-5">Seguridad digital</li>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">14</th>
+                            <td><a href="#">Reforzamiento y Proceso de Certificación</a></td>
+                            <td class="px-1 px-md-5 text-left pl-md-5">
+                                <li class="px-0 mx-0 px-md-5">Taller Práctico fin resolución de dudas y guía final para
+                                    el proceso de
+                                    certificación</li>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center col-12">
+                <!-- <button id="btn-ingresa-video" class="shadow btn"><a href="semana-1.html">Ingresa</a></button> -->
+                <button class="btn text-center shadow" onclick="logOut()">Cerrar sesión</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <footer class="container-fluid" id="footer-id">
+        <section class="container">
+            <p class="copy">2021 Todos los derechos reservados. Plataformas Audiovisuales</p>
+            <!-- <div class="icon-container">
+                <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+                <a href=""><i class="fas fa-phone-square fa-2x"></i></a>
+            </div> -->
+
+        </section>
+    </footer>
+
+    <script type="text/javascript">
+        window.reproducir = function () {
+            document.getElementById("video").play();
+        };
+
+        window.pausa = function () {
+            document.getElementById("video").pause();
+        };
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyADc0TZlRgAiX0f--6wLhMLpeh8KugwMFk",
+            authDomain: "curso-ccc-1.firebaseapp.com",
+            databaseURL: "https://curso-ccc-1-default-rtdb.firebaseio.com",
+            projectId: "curso-ccc-1",
+            storageBucket: "curso-ccc-1.appspot.com",
+            messagingSenderId: "912929060318",
+            appId: "1:912929060318:web:c56e4739b8ef69d73e194f"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <!-- <script src="assets/js/ingreso.js"></script> -->
+    <script src="assets/js/ingreso-2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+// #main-semana-1{
+//     padding-top: 10rem !important;
+//     background-image: none;
+
+// }
+
+#title-video-1{
+    color: $azul-ccc;
+    font-weight: bold;
+
+}
+
+#video-cont{
+    & p {
+        line-height: 1.5rem;
+        padding: 0rem 5rem !important;
+    }
+}
+
+#div-autoev {
+    background-color: $azul-ccc;
+    opacity: 90%;
+    text-shadow: grey 1px 1px !important;
+    & a {
+        color: $ambar-ccc;
+        text-decoration: none;
+        &:hover {
+            color: whitesmoke;
+        }
+    }
+}
+
+#div-m-apoyo {
+   background-color: rgba(135, 155, 0, 0.742);
+   opacity: 90%;
+   text-shadow: grey 1px 1px;
+   & a {
+        color: $azul-ccc;
+        text-decoration: none;
+        &:hover {
+            color: whitesmoke;
+        }
+}
+}
+
+#btn-reu-meet{
+    opacity: 80%;
+    &:hover{
+        color:rgba(245, 222, 18, 0.911) !important;
+    }
+    & img {
+        height: 20px !important;
+        padding-right: 11px !important ;
+    }
+}
+
+#btn-atras {
+    padding: 0.5rem 5rem !important;
+    // display: none !important;
+}
