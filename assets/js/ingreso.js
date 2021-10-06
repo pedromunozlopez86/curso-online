@@ -1,3 +1,5 @@
+// const { default: firebase } = require("firebase");
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
    console.log("Inicio de sesión valido :) ")
@@ -11,6 +13,8 @@ firebase.auth().onAuthStateChanged(function(user) {
    // document.location.replace('login-ok.html')
   }
 });
+
+
 
 function login(){
     let correoUser = $("#correo-login").val();
@@ -27,7 +31,7 @@ function login(){
     if (errorCode === 'auth/wrong-password') {
         alert('Contraseña invalida, por favor reingrese');
     } else {
-        console.log("else"+error);
+        alert("else"+error);
     } 
     console.log(error);
 }); }
@@ -49,6 +53,20 @@ function logOut() {
 
 
 
+function resetPass() {
+  let correoUser = $('#correo-pass').val();
+  firebase.auth().sendPasswordResetEmail(correoUser)
+  .then(() =>{
+    let msj = `Se ha enviado la solicitud de cambio de contraseña a: ${correoUser}`
+    alert(msj)
+    document.location.replace('login-ok.html')
 
+  })
+  .catch((error) =>{
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    alert(errorMessage)
+  })
+}
 
 
